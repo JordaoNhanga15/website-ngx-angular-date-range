@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css'); */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+*, *:after, *:before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+	--c-action-primary: #2e44ff;
+	--c-action-primary-accent: #e9e5ff;
+	--c-action-secondary: #e5e5e5;
+	--c-text-primary: #0d0f21;
+	--c-text-secondary: #6a6b76;
+  --gray: #34495e;
+  --darkgray: #2c3e50;
+	--c-background-primary: #d0d1de;
+}
+
+body {
+    align-items: center;
+    color: rgba(0, 0, 0, .8);
+    display: grid;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    width: 100% !important;
+    justify-items: center;
+	  color: var(--c-text-primary);
+	  background: var(--c-background-primary) !important;
+}

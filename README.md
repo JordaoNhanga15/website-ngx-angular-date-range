@@ -1,27 +1,151 @@
-# AngularTourOfHeroes
+# Date Range Picker Angular Library
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+The **ngx-angular-date-range-picker** library provides a customizable date range picker component for Angular applications.
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To use this library in your Angular project, you need to install it using npm:
 
-## Code scaffolding
+```bash
+npm install ngx-angular-date-range-picker
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Usage
 
-## Build
+1. Import the `DateRangePickerModule` into your application module:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```typescript
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { DateRangePickerModule } from 'ngx-angular-date-range-picker';
 
-## Running unit tests
+@NgModule({
+  declarations: [/* ... */],
+  imports: [
+    BrowserModule,
+    DateRangePickerModule, // Add this line
+  ],
+  bootstrap: [/* ... */],
+})
+export class AppModule {}
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. In your component template, use the `ngx-angular-date-range-picker` component:
 
-## Running end-to-end tests
+```html
+<date-range-picker [props]="calendar" [control]="date"></date-range-picker>
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. In your component TypeScript file, configure the `calendarType` and the `FormControl`:
 
-## Further help
+```typescript
+import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { calendarType } from 'ngx-angular-date-range-picker';
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class AppComponent {
+  date = new FormControl();
+
+  calendar: calendarType = {
+    type: 'day',
+    date: new Date(),
+    containDarkMode: true,
+    locale: 'en',
+    backgroundColorPrimary: '#F1BF98',
+    backgroundColorSecondary: '#FDF4ED',
+    maxDate: new Date(),
+    minDate: new Date(),
+  };
+}
+```
+
+##Options
+<table>
+  <tr>
+    <th>Option</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>type</td>
+    <td>string</td>
+    <td>day</td>
+    <td>Specifies the type of date range picker to be displayed. Possible values are <code>day</code>, <code>month</code>, and <code>year</code>.</td>
+  </tr>
+  <tr>
+    <td>date</td>
+    <td>Date</td>
+    <td>new Date()</td>
+    <td>Specifies the date to be displayed in the date range picker.</td>
+  </tr>
+  <tr>
+    <td>containDarkMode</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Specifies whether the date range picker should be displayed in dark mode.</td>
+  </tr>
+  <tr>
+    <td>locale</td>
+    <td>string</td>
+    <td>en</td>
+    <td>Specifies the locale to be used for formatting the date range picker. Possible values are <code>en</code> and <code>pt</code>.</td>
+  </tr>
+  <tr>
+    <td>backgroundColorPrimary</td>
+    <td>string</td>
+    <td>#F1BF98</td>
+    <td>Specifies the primary background color of the date range picker.</td>
+  </tr>
+  <tr>
+    <td>backgroundColorSecondary</td>
+    <td>string</td>
+    <td>#FDF4ED</td>
+    <td>Specifies the secondary background color of the date range picker.</td>
+  </tr>
+  <tr>
+    <td>maxDate</td>
+    <td>Date</td>
+    <td>new Date()</td>
+    <td>Specifies the maximum date that can be selected in the date range picker.</td>
+  </tr>
+  <tr>
+    <td>minDate</td>
+    <td>Date</td>
+    <td>new Date()</td>
+    <td>Specifies the minimum date that can be selected in the date range picker.</td>
+  </tr>
+</table>
+
+## Demo
+
+
+## Features
+
+- Supports various date range types (day, month, year).
+- Allows formatting based on different regions.
+- Provides internationalization (i18n) support.
+- Customizable CSS styling.
+- Supports dark mode.
+- Allows setting a maximum and minimum date range.
+- Supports reactive forms.
+- Supports template-driven forms.
+- Supports Angular 11.
+
+## Contributions
+
+Contributions are welcome! Feel free to open issues or pull requests on the [GitHub repository](https://github.com/JordaoNhanga15/angular-date-range-picker).
+
+## Author
+
+- GitHub: [@JordaoNhanga15](https://github.com/JordaoNhanga15)
+- LinkedIn: [Jordão de Oliveira](https://www.linkedin.com/in/jordao-de-oliveira/)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
