@@ -48,6 +48,11 @@ export class AppComponent implements OnInit {
     { value: 'it', label: 'Italian' },
     { value: 'ni', label: 'Nicaragua' },
     { value: 'th', label: 'tailandia' },
+    { value: 'tw', label: 'Taiwan' },
+    { value: 'se', label: 'Sweden' },
+    { value: 'hu', label: 'Hungary' },
+    { value: 'lt', label: 'Lithuania' },
+    { value: 'kr', label: 'South Korea' },
   ];
   skills : string[] = [
     "Software Engineer",
