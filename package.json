@@ -18,7 +18,7 @@
     "@angular/platform-browser": "~12.1.0",
     "@angular/platform-browser-dynamic": "~12.1.0",
     "@angular/router": "~12.1.0",
-    "ngx-angular-date-range-picker": "^0.1.7",
+    "ngx-angular-date-range-picker": "^0.1.8",
     "font-awesome": "^4.7.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
