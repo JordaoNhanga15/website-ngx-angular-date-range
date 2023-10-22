@@ -3,16 +3,16 @@ import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import { calendarType } from 'ngx-angular-date-range-picker';
 
 @Component({
-  selector: 'app-root',
+  selector: 'date-range',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   styles: [
     `
-      /deep/ .light{
+      /deep/ .light {
         width: 100% !important;
       }
-    `
-  ]
+    `,
+  ],
 })
 export class AppComponent implements OnInit {
   title = 'angular-tour-of-heroes';
@@ -54,27 +54,27 @@ export class AppComponent implements OnInit {
     { value: 'lt', label: 'Lithuania' },
     { value: 'kr', label: 'South Korea' },
   ];
-  skills : string[] = [
-    "Software Engineer",
-    "Angular",
-    "React",
-    "Vue",
-    "Node",
-    "Express",
-    "MongoDB",
-    "MySQL",
-    "PostgreSQL",
-    "Docker",
-    "DDD",
-    "TDD",
-    "Clean Code",
-    "Clean Architecture",
-    "SOLID",
-    "Design Patterns",
-    "Git",
-    "GitHub",
-    "GitLab",
-  ]
+  skills: string[] = [
+    'Software Engineer',
+    'Angular',
+    'React',
+    'Vue',
+    'Node',
+    'Express',
+    'MongoDB',
+    'MySQL',
+    'PostgreSQL',
+    'Docker',
+    'DDD',
+    'TDD',
+    'Clean Code',
+    'Clean Architecture',
+    'SOLID',
+    'Design Patterns',
+    'Git',
+    'GitHub',
+    'GitLab',
+  ];
 
   constructor(private fb: FormBuilder) {}
 
