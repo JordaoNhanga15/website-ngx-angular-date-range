@@ -328,6 +328,23 @@ pre {
   text-align: center;
 }
 
+.pets-weight{
+  width: 54% !important;
+}
+
+.pets-weight-container{
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.w-100{
+  width: 100% !important;
+}
+
 @media screen and (max-width: 980px) {
   .signup-container {
     grid-template-areas: "top";
@@ -335,6 +352,14 @@ pre {
   }
 
   .card-container{
+    width: 100% !important;
+  }
+
+  .pets-weight{
+    width: 100% !important;
+  }
+
+  .w-100{
     width: 100% !important;
   }
 
