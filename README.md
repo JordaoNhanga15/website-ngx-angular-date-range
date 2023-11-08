@@ -64,7 +64,8 @@ export class AppComponent {
 }
 ```
 
-##Options
+## Options
+
 <table>
   <tr>
     <th>Option</th>
@@ -122,9 +123,6 @@ export class AppComponent {
   </tr>
 </table>
 
-## Demo
-
-
 ## Features
 
 - Supports various date range types (day, month, year).
@@ -134,8 +132,22 @@ export class AppComponent {
 - Supports dark mode.
 - Allows setting a maximum and minimum date range.
 - Supports reactive forms.
-- Supports template-driven forms.
-- Supports Angular 11.
+- Supports Angular 12 and 14.
+- Supports Angular Universal.
+
+## Browser Support
+
+The date range picker component supports the following browsers:
+
+| Browser         | Version    |
+| --------------- | ---------- |
+| Google Chrome   | Latest     |
+| Mozilla Firefox | Latest     |
+| Microsoft Edge  | Latest     |
+| Safari          | Latest (Testing)    |
+| Internet Explorer | 11 and above |
+
+You can customize the browser versions and additional information as needed.
 
 ## Contributions
 
@@ -146,6 +158,10 @@ Contributions are welcome! Feel free to open issues or pull requests on the [Git
 - GitHub: [@JordaoNhanga15](https://github.com/JordaoNhanga15)
 - LinkedIn: [Jordão de Oliveira](https://www.linkedin.com/in/jordao-de-oliveira/)
 
-## License
+Light will always guide our paths through the shadows. Deep Peace!!!
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## T.'.F.'.A.'.
+
+## Demo
+<video src="https://github.com/JordaoNhanga15/angular-date-range-picker/assets/64567651/3e9cd769-9ee1-4a97-91b5-99622da7939c" width="200px" height="300px" />
+You can see a demo of the date range picker component [here](https://ngx-angular-date-range.vercel.app/).
